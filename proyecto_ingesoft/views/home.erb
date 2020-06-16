@@ -1,0 +1,32 @@
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<body class="home">
+<center>
+<h1>Bienvenidos al juego Vacas y Toros</h1>
+
+<br>
+<form action="/setData" method="post">
+  Escoja su modo de juego:
+  <select name="gameMode">
+    <option value="C">Colores</option>
+    <option value="N">Numericos</option>
+  </select>
+  <br>
+  <br>
+  Escoja dificultad: 
+  <select name="difficult">
+    <option value="4">Facil</option>
+    <option value="6">Medio</option>
+    <option value="8">Dificil</option>
+  </select>
+  
+  <br>
+  <br>
+  Escoja cantidad de jugadores:
+  <select name="players">
+    <option value="1">1 jugador</option>
+    <option value="2">2 jugadores</option>
+  </select>
+  <br>
+  <br>
+  <input type="submit" value="Siguiente">
+</form>

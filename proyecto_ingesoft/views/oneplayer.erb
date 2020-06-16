@@ -1,0 +1,20 @@
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<body class="home">
+<form action="/setplayer1" method="post">
+
+    <h2>Ingrese su nombre</h2>
+    <input type="text"  name="namePlayer1">
+
+    <%if (@@game.getMode() == 'N')%>
+
+        <p> El codigo numerico se generara aleatoriamente, buena suerte </p>
+
+    <%elsif (@@game.getMode() == 'C')%>
+
+        <p> El codigo de colores se generara aleatoriamente, buena suerte</p>
+
+    <%end%>
+
+    <input type="submit" value="JUGAR!">
+
+</form>
